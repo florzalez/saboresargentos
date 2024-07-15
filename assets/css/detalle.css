@@ -831,13 +831,13 @@ section,
   padding: 80px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url(../img/image\ 146.png) top center no-repeat;
+  background-color: hsl(0, 97%, 24%);
   background-size: cover;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 84px;
+  font-size: 60px;
   font-family: "Mohave";
   font-weight: 600;
   line-height: 75px;
@@ -846,24 +846,29 @@ section,
 }
 
 .hero h2 {
-  color: white;
-  margin: 0 20px 30px 0;
-  font-family: "Mohave";
-  font-size: 39.5px;
-  font-weight: 300;
+  color: rgb(0, 0, 0);
+  margin: 0 20px 60px 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
   text-wrap: nowrap;
 }
 
 .hero p {
   color: white;
-  margin: 0 20px 60px 0;
-  font-size: 15x;
-  font-weight: 400;
+  font-family: "Montserrat";
+  margin: 0 20px 30px 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero .precio {
+font-size: 25px;
 }
 
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: hsl(0, 97%, 24%);
+  background: hsl(0, 0%, 0%);
   font-family: "Mohave";
   font-weight: 500;
   font-size: 23px;
@@ -975,35 +980,6 @@ section,
   transform: translateX(5px);
 }
 
-/*--------------------------------------------------------------
-# Products Section
---------------------------------------------------------------*/
-
-.products .member-info h5 {
-  font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 400;
-  color: hsl(0, 97%, 24%);
-  text-align: center;
-}
- 
-
-.products .btn-get-started {
-  color: var(--contrast-color);
-  background: hsl(0, 0%, 0%);
-  font-family: "Mohave";
-  font-weight: 500;
-  font-size: 23px;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 40px;
-  margin-top: 60px;
-  border-radius: 10px;
-  transition: 0.5s;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0);
-}
 
 /*--------------------------------------------------------------
 # Values Section
@@ -1029,24 +1005,11 @@ section,
 }
 
 
-.values .bajada-titulo {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Montserrat";
-  color: white;
-}
-
-
-.values .card .card-img-center {
-  margin-top: 0px;
-  margin-bottom: 5px;
-}
-
 .values .card {
   background-color:hsl(0, 0%, 0%);
   color: white;
   padding: 30px;
-  text-align: center;
+  text-align: left;
   transition: 0.3s;
   height: 100%;
   border: 0;
@@ -1058,7 +1021,7 @@ section,
   font-size: 25px;
   font-weight: 400;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .values .card p {
@@ -1083,10 +1046,10 @@ section,
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0);
   margin-top: 15px;
-  margin-bottom: 3px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
+  margin-left: 70px;
+  margin-right: 70px;
+  }
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1343,7 +1306,7 @@ section,
 --------------------------------------------------------------*/
 
 
-.recent-posts .post-item  {
+.recent-posts .post-item .post-content {
   padding-top: 10px;
   padding-bottom: 0px;
 }
@@ -1370,12 +1333,6 @@ section,
   line-height: 0;
   color: black;
 }
-.recent-posts .post-content {
-padding-top: 10px;
-display: flex;
-justify-content: start;
-align-content: start;
-}
 
 .recent-posts .btn-get-started {
   color: var(--contrast-color);
@@ -1392,10 +1349,7 @@ align-content: start;
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0);
   margin-top: 15px;
-  margin-left: 70px;
-  margin-right: 70px;
 }
-
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1404,15 +1358,6 @@ align-content: start;
   padding: 30px;
 }
 
-.contact .contenedor-titulo {
-  width: 100%; 
-  display: flex;
-  justify-content: center;
-  align-content: center;
- }
-.contact .ancho {
-  width: 600px;
-}
 .contact .info-item i {
   font-size: 38px;
   line-height: 0;
@@ -1479,7 +1424,101 @@ align-content: start;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: hsl(0, 97%, 24%);
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+ /*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features .feature-box {
+  padding: 0px 20px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.features .feature-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.features .feature-box i {
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--accent-color);
+  line-height: 0;
+  padding: 4px;
+  margin-right: 10px;
+  font-size: 24px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.features .feature-box:hover i {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Alt Features Section
+--------------------------------------------------------------*/
+.alt-features .icon-box {
+  display: flex;
+}
+
+.alt-features .icon-box h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  color: hsl(0, 97%, 24%);
+}
+
+.alt-features .icon-box i {
+  font-size: 44px;
+  line-height: 44px;
+  color: var(--accent-color);
+  margin-right: 15px;
+}
+
+.alt-features .icon-box p {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Taller Section
+--------------------------------------------------------------*/
+.talleres .taller-item {
+  background-color: hsl(0, 97%, 24%);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 20px 20px;
+  text-align: left;
+  transition: 0.3s;
+  border-radius: 0px;
+}
+
+.talleres .taller-item .icon {
+  font-size: 36px;
+  padding: 20px 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.talleres .taller-item h3 {
+  font-size: 24px;
+  font-weight: 500;
+ color: white;
+}
+ .talleres .taller-it p {
+ font-size: 18px;
+ font-weight: 400;
+ color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1508,7 +1547,7 @@ align-content: start;
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: hsl(0, 97%, 24%)
+  color: var(--accent-color);
 }
 
 
@@ -1540,8 +1579,6 @@ align-content: start;
   transition: 0.3s;
   width: auto;
   height: fit-content;
-  display: flex;
-  justify-content: center;
 }
 
 
